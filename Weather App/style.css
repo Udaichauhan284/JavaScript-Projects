@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Tilt+Neon&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Macondo', cursive;
+  font-family: 'Tilt Neon', sans-serif;
+}
+body{
+  background-color: #222;
+}
+.card{
+  width: 90%;
+  max-width: 470px;
+  color: #fff;
+  background: linear-gradient(135deg, #4030d0 0%, #7303c0 45%, #ec38bc 80%, #fdeff9 100%);
+  padding: 40px 35px;
+  border-radius: 20px;
+  margin: 70px auto 15px;
+  text-align: center;
+}
+.search{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search input{
+  border: 0;
+  outline: none;
+  background: #edfffc;
+  color: #555;
+  padding: 10px 25px;
+  flex: 1;
+  height: 60px;
+  margin-right: 15px;
+  font-size: 18px;
+  border-radius: 30px;
+}
+.search button{
+  border: 0;
+  outline: none;
+  background: #edfffc;
+  color: #555;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+}
+.search img{
+  width: 25px;
+}
+
+.weather-icon{
+  width: 170px;
+  margin-top: 30px;
+}
+.weather h1{
+  font-size: 80px;
+  font-weight: 500;
+}
+.weather h2{
+  font-size: 45px;
+  font-weight: 400;
+  margin-top: -10px;
+}
+.details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+.col{
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.col img{
+  width: 40px;
+  margin-right: 10px;
+}
+.humidity, .wind{
+  font-size: 25px;
+  margin-top: -6px;
+}
+.weather{
+  display: none;
+}
+.error{
+  font-size: 20px;
+  margin: 20px 10px;
+  text-align: left;
+  color: #ec38bc;
+  display: none;
+}
