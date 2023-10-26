@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Tilt+Neon&display=swap');
+
+*{
+  font-family: 'Macondo', cursive;
+  font-family: 'Tilt Neon', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #05386b;
+  color: #fff;
+}
+.container{
+  margin: 10%;
+  width: 95%;
+  max-width: 750px;
+}
+.container h1{
+  font-weight: 500;
+  font-size: 50px;
+}
+.container span{
+  position: relative;
+  padding: 5px;
+}
+.container span::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 4px;
+  background-color: aquamarine;
+  transition: width 0.3s ease;
+}
+.container span:hover::after{
+  width: 100%;
+}
+.display{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: #fff;
+  color: #333;
+  margin: 51px 0 40px 0;
+  padding: 27px 25px;
+  border-radius: 24px;
+}
+.display img{
+  width: 35px;
+  cursor: pointer;
+}
+.display input{
+  border: none;
+  outline: none;
+  font-size: 30px;
+  font-weight: 200;
+}
+.container button img{
+  width: 30px;
+  margin-right: 25px;
+}
+.container button{
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(29, 208, 208);
+  color: white;
+  padding: 15px 25px;
+  font-size: 25px;
+  font-weight: 300;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: box-shadow 0.5s ease-in;
+}
+.container button:hover{
+  box-shadow: 10px 10px 30px rgb(115, 176, 176); 
+}
