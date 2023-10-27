@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Tilt+Neon&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Macondo', cursive;
+  font-family: 'Tilt Neon', sans-serif;
+}
+.container{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(135deg, #36d1dc, #5b86e5);
+  color: #fff;
+}
+.container h1{
+  font-size: 70px;
+  font-weight: 500;
+  margin-top: -10%;
+  margin-bottom: 50px;
+}
+span{
+  color: #ff2963;
+  border-bottom: 4px solid #ff2963;
+}
+textarea{
+  outline: none;
+  border: none;
+  width: 650px;
+  height: 270px;
+  background: #d6d6d8;
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  padding: 25px;
+  resize: none;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+.row{
+  display: flex;
+  align-items: center;
+  width: 600px;
+  gap: 20px;
+}
+button{
+  display: flex;      /* this for aligin the image and text in button */
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  background-color: #ff2963;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 35px;
+  font-size: 24px;
+  cursor: pointer;
+}
+img{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+select{
+  outline: none;
+  border: none;
+  height: 55px;
+  padding: 0 20px;
+  font-size: 20px;
+  color: rgb(11, 0, 0);
+  flex: 1;
+  background: #d6d6d8;
+  opacity: 0.5;
+  border-radius: 35px;
+  appearance: none;
+  background-image: url(images/dropdown.png);
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position-x: calc(100% - 20px);
+  background-position-y: 20px;
+}
