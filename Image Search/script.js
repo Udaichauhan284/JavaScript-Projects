@@ -4,7 +4,7 @@ const searchBtn = document.getElementById('search-button');
 const searchResult = document.querySelector('.search-result');
 const showMore = document.getElementById('show-more');
 
-const accessKey = "pU3j-CbsydgTpDCqUH1PiwLMOsUBSBD8DecHn3bkZrk";
+const accessKey = "ENTER YOUR ACCESS KEY"
 let keyword = "";
 let page = 0;
 
