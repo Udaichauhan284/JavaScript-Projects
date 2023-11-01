@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital@1&family=Macondo&family=Poppins&family=Tilt+Neon&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background-color: rgb(58, 2, 58);
+  color: aliceblue;
+}
+h1{
+  text-align: center;
+  font-weight: 600;
+  font-size: 50px;
+  margin-top: 50px;
+}
+.conatiner{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#left,#right{
+  width: 350px;
+  height: 450px;
+  border: 4px dotted white;
+  border-radius: 10px;
+  margin: 30px;
+}
+.list{
+  background: rgba(234, 110, 223, 0.873);
+  display: flex;
+  align-items: center;
+  cursor: grab;
+  height: 65px;
+  margin: 20px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 400;
+  border-radius: 10px;
+}
+.list img{
+  width: 20px;
+  height: 30px;
+  margin-right: 20px;
+  margin-left: 15px;
+}
