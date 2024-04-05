@@ -88,3 +88,74 @@ NodeList have a difined forEach method as well as a few other methods including 
 
 NodeList behave differently depending on how you access them, if you access element using childNodes, the retured list is live and will update as more element are added to the node, It it's accessed using querySelectorAll(), the returned list is static and will not update if more elements are added to the node.
 */
+
+//Getting the Root and child nodes
+const rootNode = document.getRootNode();
+console.log(rootNode);
+console.log(rootNode.childNodes); //NodeList - HTML
+
+const htmlNode = rootNode.childNodes[1];
+console.dir(htmlNode); //return in object
+console.log(htmlNode.childNodes); //NodeList(3) [head,text,body]
+console.log(htmlNode.childNodes[1]); //text
+
+//parent node
+// console.log(htmlNode.childNodes[1].parentElement); //html kye childnode text ka parent kon hai, html itself.
+
+//silbiling
+// console.log(htmlNode.childNodes[1].nextSibling); //body
+
+//head node child
+// console.log(htmlNode.childNodes[2].childNodes);
+
+const body = document.body;
+// console.log(body);
+
+const head = document.querySelector("head");
+// console.log(head);
+const title = head.querySelector("title");
+// console.log(title);
+
+//Need to see how many classes in section todo
+const section = document.querySelector(".todo-section");
+console.log(section.classList); //DOMTokenList(2)
+
+//adding class in section using js
+// section.classList.add("bg-dark");
+
+//removing the class
+// section.classList.remove("bg-dark");
+
+//Conatins the class - checking
+const ans = section.classList.contains("container"); 
+console.log(ans); // true
+
+//Toggle - if class there, it will remmove that class, if class not there, it will add it.
+// section.classList.toggle("bg-dark");
+
+//Creating the element by JS.
+//document.createElement()
+//append, prepend, remove
+const newTodoItem = document.createElement("li");
+const newTodoItemText = document.createTextNode("Learn DSA");
+newTodoItem.appendChild(newTodoItemText);
+//appendChild is old method.
+console.log(newTodoItem);
+
+//now i hace to add in div todo-item
+const todoList = document.querySelector(".todo-list");
+todoList.append(newTodoItem); //appened in todo-list
+
+//simple method
+const newTodoItem1 = document.createElement("li");
+newTodoItem1.textContent = "Learn Typescript";
+// todoList.append(newTodoItem1);
+//append is new method. this will add in last
+
+//now use prepend
+todoList.prepend(newTodoItem1);
+
+//how to get the dimension of element. height, width
+const sectionTodo1 = document.querySelector(".todo-section");
+console.log(sectionTodo1.getBoundingClientRect().height);
+console.log(sectionTodo1.getBoundingClientRect().width);
