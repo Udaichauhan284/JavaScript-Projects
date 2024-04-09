@@ -111,3 +111,46 @@ a{
   margin-bottom: 1rem;
   margin: auto;
 }
+
+.todo-list{
+  text-align: left;
+  font-size: 1.3rem;
+  list-style-type: none;
+}
+.todo-list li {
+  padding: 0.7rem;
+  background: burlywood;
+  color: black;
+  margin-top: 1rem;
+  text-transform: capitalize;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.todo-btn{
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.done {
+  background-color: green;
+  transition: background-color 0.4s;
+}
+.done:hover{
+  background-color: rgb(31, 48, 42);
+  color : white;
+}
+
+.remove {
+  background-color: red;
+  transition: background-color 0.4s;
+}
+.remove:hover{
+  background-color: rgb(69, 28, 28);
+  color : white;
+}

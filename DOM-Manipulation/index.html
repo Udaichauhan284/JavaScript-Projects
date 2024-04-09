@@ -10,7 +10,10 @@
  <!--  <script src="./101.js" defer></script> this is a best way to use the js file in html, first parsing will happen, the js will excute simentenously, then after that again parsing of html fill will happen again. -->
 
  <!-- Adding event js file-->
- <script src="./event.js" defer></script>
+ <!-- <script src="./event.js" defer></script> -->
+
+ <!-- Adding Script file for Adding Todo-->
+ <script src="./todoForm.js" defer></script>
 </head>
 <body>
   <header class="header">
@@ -27,14 +30,24 @@
       <button class="btn btn-headline" >Explore</button>
     </div>
   </header>
+
   <section class="todo-section container">
     <h2>Plan Your Tasks Now!</h2>
+
+    <!--TODO FORM-->
     <form class="form-todo">
       <input type="text" placeholder="Add Todo">
-      <input type="submit" value="Submit" class="btn">
+      <input type="submit" value="ADD" class="btn">
     </form>
-    <div class="todo-list">
-    </div>
+    <ul class="todo-list">
+      <li>
+        <span>Do You Task</span>
+        <div class="todo-buttons">
+          <button class="todo-btn done">Done</button>
+          <button class="todo-btn remove">Remove</button>
+        </div>
+      </li>
+    </ul>
   </section>
 
   <section class="section-signup container">

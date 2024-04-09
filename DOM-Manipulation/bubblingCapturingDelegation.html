@@ -8,6 +8,49 @@
   <script src="./BubbleCapDelegation.js" defer></script>
 </head>
 <body>
-  
+  <main>
+    <div class="grandparent box">
+      grandparent
+      <div class="parent box">
+        parent
+        <div class="child box">
+          child
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
+
+<!--
+  Event Bubbling and Capturing
+  ----------------------------
+
+  -> Bubbling
+  The bubbling principle is simple. When an event happens on an element, it first runs the handler on it, then it moves to it sparent, then all the way up on other ancestors.
+
+  Lets say we have 3 nested elements FORM > DIV > P with a handler on each of them :
+  A click on the inner <p> first runs onClick
+    1. on that <p>.
+    2. Then on the outer <div>.
+    3. Then on the outer <form>.
+    4. and so on upwards till the document object.
+
+    -- Stopping Bubbling
+A bubbling event goes from the target elements straight up. Normally it goes upwards till <html>, and then to document object and some events even reach window, calling all handlers on the path.
+  But any handler may decide that the event has been fully processed and stop the bubbling.
+  The method for it is event.stopProgagation(). 
+
+-- Event Capturing
+There's another phase of event processing called "capturing". t is rarely used in real code, but sometimes can be useful.
+
+The standard DOM events describes 3 phase of event progagation:
+1.Capturing Phase: the event goes down to the element.
+2.Target Phase - the event reaches the target element.
+3.Bubbling Phase - the event bubbles up from the element.
+
+To catch an event on the capturing phase, we need to set the handler capture option true:
+there are 2 possible values of the capture option:
+1. it it's false (default), then the handler is set on the bubbling phase.
+2. if it;s true, then the handler is set on capturing phase.
+-->
