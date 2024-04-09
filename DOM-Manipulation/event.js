@@ -18,8 +18,24 @@ const btn = document.querySelector(".btn-headline");
 // });
 
 //use of arrow function, in this will goes to  window
-btn.addEventListener("click", ()=>{
-  console.log("You click me from arrow function");
-  console.log("Value of This");
-  console.log(this); //window object
+// btn.addEventListener("click", ()=>{
+//   console.log("You click me from arrow function");
+//   console.log("Value of This");
+//   console.log(this); //window object
+// });
+
+//Keypress event, Mouseover event
+const body = document.body;
+
+body.addEventListener("keypress", (e) => {
+  console.log(e.key); //it will show the key.
+});
+
+const mainButton = document.querySelector(".btn");
+mainButton.addEventListener("mouseover", ()=>{
+  console.log("Mouse Over event occured!!!");
+});
+
+mainButton.addEventListener("mouseleave", ()=>{
+  console.log("Mouse Leave event ocurred!!!");
 });
